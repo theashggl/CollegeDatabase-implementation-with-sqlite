@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form"
+    android:background="@drawable/bub">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstone"
+        android:hint="Enter your first name"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstone"
+        android:hint="Enter your password" />
+
+    <EditText
+        android:id="@+id/Father"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:hint="Enter your fathers name" />
+
+    <EditText
+        android:id="@+id/roll"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Father" />
+
+    <Button
+        android:id="@+id/registerdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roll"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="1dp"
+        android:text="Register" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roll"
+        android:text="update"
+        android:id="@+id/update"
+        android:layout_marginLeft="270dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:id="@+id/delete"
+        android:layout_below="@id/roll"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/fathers"
+        android:id="@+id/first"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/fathers"
+        android:layout_below="@id/ids"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ids"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/delete"/>
+</RelativeLayout>

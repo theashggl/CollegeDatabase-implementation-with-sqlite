@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/done">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="40dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F28027"
+            android:id="@+id/homecard"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/homesign"/>
+            <Button
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F28027"
+                android:text="home"
+                android:textSize="34dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/logcard"
+            android:background="#C2175B">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/pink" />
+        <Button
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C2175B"
+        android:text="Log OUt"
+        android:textSize="30dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:layout_gravity="center"
+                android:background="#6DC27E"
+                android:id="@+id/imagecard"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/foundya" />
+
+                <Button
+                    android:id="@+id/images"
+                    android:layout_width="74dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="#6DC27E"
+                    android:text="capture image" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="152dp"
+                android:layout_height="181dp"
+                android:id="@+id/datacard"
+                android:padding="20dp"
+                android:background="#33ACDF"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/data" />
+
+                <Button
+                    android:id="@+id/showdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#33ACDF"
+                    android:text="see your data"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showtextdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

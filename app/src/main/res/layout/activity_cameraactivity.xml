@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/headmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAMERA"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:id="@+id/images"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:text="upload image"
+            android:padding="10dp"
+            android:background="#f1519a"/>
+        <ImageView
+            android:id="@+id/img_camera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:background="#3000"
+            android:src="@drawable/icon"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUbmit"
+        android:background="#f1519a"
+        android:layout_marginTop="45dp"
+        android:padding="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+</LinearLayout>

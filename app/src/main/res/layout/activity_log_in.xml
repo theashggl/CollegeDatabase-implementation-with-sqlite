@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/done"
+    tools:context=".log_in">
+
+    <ImageView
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="#74eaec"
+        android:textColor="#74eaec"
+        android:hint="Enter your username" />
+
+    <EditText
+        android:id="@+id/paswd"
+        android:textColor="#74eaec"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/id"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="#74eaec"
+        android:hint="Enter your password"
+        android:inputType="textPassword" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#f29974"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:layout_below="@id/paswd"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="40dp"
+     
+        android:text="Register"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgt"
+        android:textColor="#f29974"
+        android:layout_below="@id/paswd"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="45dp"
+
+        android:text="Forgot password"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paswd"
+        android:layout_centerHorizontal="true"
+        android:text="Log in" />
+</RelativeLayout>
